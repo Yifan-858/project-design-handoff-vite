@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
-import buttonData from "./Buttons.json";
+import buttonData from "../data/Buttons.json";
 import { Buttons } from "./Buttons"; 
 
 // Parent container with relative positioning
@@ -43,7 +43,7 @@ export const HeroCard = () => {
               objectFit: "cover",
             }}
           />
-          <div style={{ width: "236px"}}>
+          <div style={{ width: "236px", position: "relative" }}>
             <Buttons buttonList={[item]} />
           </div>
         </StyledImageContainer>
