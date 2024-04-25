@@ -4,13 +4,14 @@ import styled from "styled-components";
 const StyledCard = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
   gap: 48px;
   padding: 16px 32px;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
+  width: 572px; 
 `;
 
 // Styled component for the class image
@@ -26,9 +27,8 @@ const StyledClassImage = styled.img`
 const StyledTextButton = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  align-items: center;
-  gap: 24px;
+  justify-content: space-between; 
+  align-items: flex-start; 
   width: 248px;
 `;
 
@@ -38,6 +38,7 @@ const StyledClassDescription = styled.div`
   font-family: Avenir, sans-serif;
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.5;
 `;
 
 // Styled component for the button
@@ -50,7 +51,8 @@ const StyledButton = styled.button`
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s ease;
-
+  align-items: center;
+  gap: 10px;
   &:hover {
     background-color: #552a1c;
   }
@@ -64,6 +66,7 @@ const StyledClassName = styled.p`
   font-style: normal;
   font-weight: 500;
 `;
+
 
 //Hard code the class card
 export const ClassCard = () => {
@@ -81,7 +84,7 @@ export const ClassCard = () => {
             <p>We also offer 1-1 classes.</p>
             <p>Suitable for all levels of fitness.</p>
           </StyledClassDescription>
-          <StyledButton>Book Now</StyledButton>
+            <StyledButton>Book Now</StyledButton>
         </StyledTextButton>
       </StyledCard>
 
