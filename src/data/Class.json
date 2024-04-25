@@ -1,22 +1,26 @@
 [
   {
-    "className": "The Reformer ",
-    "description": "- challenges core strength, stability and balance. We also offer 1-1 classes. Suitable for all levels of fitness",
-    "imageId": "/public/class01.png"
+    "className": "The Reformer - challenges core strength, stability and balance.",
+    "description": " We also offer 1-1 classes. Suitable for all levels of fitness",
+    "imageId": "/class01.png",
+    "buttonText": "Book Now"
   },
   {
     "className": "Get on the mat ",
     "description": "- learn the fundamentals working at your own pace. A great place to start your pilates journey",
-    "imageId": "/public/class02.png"
+    "imageId": "/class02.png",
+    "buttonText": "Book Now"
   },
   {
     "className": "Pre and Postnatal",
     "description": "Gentle exercises will maintain strength, flexibility and promote relaxation.",
-    "imageId": "/public/class03.png"
+    "imageId": "/class03.png",
+    "buttonText": "Book Now"
   },
   {
     "className":"On Demand",
     "description": "- workout wherever, whenever, you decide. Live classes online and over a 100 pre-recorded.",
-    "imageId": "/public/class04.png"
+    "imageId": "/class04.png",
+    "buttonText":"Book Now"
   }
 ]

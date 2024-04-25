@@ -4,15 +4,15 @@
   },
   {
     "buttonText": "Personal Training",
-    "imageId": "/public/hero01.png"
+    "imageId": "/hero01.png"
   },
   {
     "buttonText": "Our Space",
-    "imageId": "/public/hero02.png"
+    "imageId": "/hero02.png"
   },
   {
     "buttonText": "Over 30 Classes",
-    "imageId": "/public/hero03.png"
+    "imageId": "/hero03.png"
   },
   {
     "buttonText":"Book Now"

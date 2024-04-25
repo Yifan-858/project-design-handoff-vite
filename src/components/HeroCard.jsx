@@ -1,7 +1,6 @@
-
 import styled from "styled-components";
 import buttonData from "../data/Buttons.json";
-import { Buttons } from "./Buttons"; 
+import { Buttons } from "./Buttons";
 
 // Parent container with relative positioning
 const StyledHeroCardContainer = styled.div`
@@ -15,16 +14,24 @@ const StyledHeroCardContainer = styled.div`
 
 // Container for image and button, with relative positioning
 const StyledImageContainer = styled.div`
-  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  width: 357px; 
-  height: 376px; 
+  flex-direction: row;
+  align-items: flex-end;
+
+  width: 357px;
+  height: 376px;
+
+  border-radius: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: ${(props) =>
+    `url(${props.imagesrc})`}; //pass in the img as the background img
+
+  .hero-btn {
+    margin-top: 50px;
+  }
 `;
-
-
 
 export const HeroCard = () => {
   const buttonsWithImages = buttonData.filter((item) => item.imageId);
@@ -32,20 +39,8 @@ export const HeroCard = () => {
   return (
     <StyledHeroCardContainer>
       {buttonsWithImages.map((item, index) => (
-        <StyledImageContainer key={index}>
-          <img
-            src={item.imageId}
-            alt={item.buttonText}
-            style={{
-              borderRadius: "12px",
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
-          <div style={{ width: "236px", position: "relative" }}>
-            <Buttons buttonList={[item]} />
-          </div>
+        <StyledImageContainer key={index} imagesrc={item.imageId}>
+          <Buttons buttonText={item.buttonText} fontSize={15} />
         </StyledImageContainer>
       ))}
     </StyledHeroCardContainer>
