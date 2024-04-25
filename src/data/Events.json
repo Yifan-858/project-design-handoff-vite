@@ -1,0 +1,24 @@
+[
+  {
+    "image": "/event01.png",
+    "title": "Slow flow & Sound bath",
+    "date": "Wednesday 29/5 - 7.30pm - 8.30pm",
+    "description": "Join Kate for an evening of gentle stretches and crystal sound bath.",
+    "buttonLabel": "Book now"
+  },
+  {
+    "image": "/event02.png",
+    "title": "Candlelight Pilates",
+    "date": "Every Friday - 7pm - 8pm",
+    "description": "Close the working week with a relaxing candelit practice.",
+    "buttonLabel": "Book now"
+  },
+  {
+    "image": "/event03.png",
+    "title": "6 week challenge",
+    "date": "Starts Monday 3/6",
+    "description": "Work towards your goal, tailored fitness and nutrition plan.",
+    "buttonLabel": "Book now"
+  }
+
+]

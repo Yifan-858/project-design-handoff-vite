@@ -11,7 +11,11 @@ const StyledCard = styled.div`
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
-  width: 572px; 
+  width: 572px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Avenir, sans-serif;
 `;
 
 // Styled component for the class image
@@ -27,18 +31,17 @@ const StyledClassImage = styled.img`
 const StyledTextButton = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  align-items: flex-start; 
+  justify-content: space-between;
+  align-items: flex-start;
   width: 248px;
+  font-family: Avenir, sans-serif;
 `;
 
 // Styled component for the class description
 const StyledClassDescription = styled.div`
   color: #000;
-  font-family: Avenir, sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
 `;
 
 // Styled component for the button
@@ -49,7 +52,6 @@ const StyledButton = styled.button`
   border-radius: 12px;
   color: white;
   cursor: pointer;
-  font-size: 18px;
   transition: background-color 0.3s ease;
   align-items: center;
   gap: 10px;
@@ -61,12 +63,8 @@ const StyledButton = styled.button`
 const StyledClassName = styled.p`
   font-size: 18px;
   color: #000;
-  font-family: Avenir;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
+  padding-top: 16px;
 `;
-
 
 //Hard code the class card
 export const ClassCard = () => {
@@ -84,7 +82,7 @@ export const ClassCard = () => {
             <p>We also offer 1-1 classes.</p>
             <p>Suitable for all levels of fitness.</p>
           </StyledClassDescription>
-            <StyledButton>Book Now</StyledButton>
+          <StyledButton>Book Now</StyledButton>
         </StyledTextButton>
       </StyledCard>
 
